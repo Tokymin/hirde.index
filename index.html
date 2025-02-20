@@ -63,7 +63,16 @@
         <!-- Approach Section -->
         <div class="content-section">
             <h2 class="section-title">Approach</h2>
-            <p>We propose a novel Structure-Content Extractor (SC-Extractor) and Fast Optimized Diffusion Sampler (FODS) to improve depth estimation in challenging endoscopic environments. SC-Extractor captures spatial cues from illumination patterns and wall contours, while FODS accelerates the inference process using an adaptive time-step selection mechanism. These two innovations work together to enhance depth accuracy and speed.</p>
+            <p> We propose a Human Intervention (HI)-based Proximal Policy Optimization (PPO) framework, termed HI-PPO, that introduces expert knowledge and improves the safety of the RDE. 
+                Specifically, the Enhanced Exploration Mechanism (EEM) with HI is proposed to accelerate the exploration efficiency of standard PPO. The Reward-Penalty Adjustment (RPA) is proposed to penalize unsafe actions in the first intervention. In addition, the Behavior Cloning Similarity (BCS) is included as an auxiliary objective to ensure the agent emulates expert actions. Comparative experiments conducted in a simulation environment across various anatomical colon segments demonstrate that our model could guides RDE effectively and safely.
+                
+                Our main contributions are as follows:
+                \begin{itemize}
+                    \item \textbf{Human Intervention-based PPO framework (HI-PPO)}: We develop a HI-PPO framework to improve the safety of robotic digestive endoscopy (RDE) by incorporating expert knowledge.
+                    \item \textbf{Enhanced exploration mechanism (EEM)}: The EEM addresses the low exploration efficiency of traditional PPO, enabling more efficient navigation.
+                    \item \textbf{Reward-penalty adjustment (RPA)}: The RPA penalizes unsafe actions at the first human intervention, encouraging safer policy learning.
+                    \item \textbf{Behavior cloning similarity (BCS)}: The BCS ensures the agent imitates expert actions, improving learning performance in complex environments.
+                \end{itemize}</p>
             <div class="container image-row">
                 <div class="row">
                     <div class="col-md-6 image-container">
