@@ -2,3 +2,6 @@
 1Rectum.gif filter=lfs diff=lfs merge=lfs -text
 2Sigmoid.gif filter=lfs diff=lfs merge=lfs -text
 3Descending.gif filter=lfs diff=lfs merge=lfs -text
+4Transverse.gif filter=lfs diff=lfs merge=lfs -text
+5Ascending.gif filter=lfs diff=lfs merge=lfs -text
+6Cecum.gif filter=lfs diff=lfs merge=lfs -text
