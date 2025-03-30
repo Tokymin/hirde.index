@@ -15,7 +15,17 @@
             <h1>Safe Navigation for Robotic Digestive Endoscopy via Human Intervention-based Reinforcement Learning</h1>
             <p><em>Min Tan, Yushun Tao, Boyun Zheng, Gaosheng Xie, Lijuan Feng, Zeyang Xia, Senior Member, IEEE and Jing Xiong, Member, IEEE</em></p>   
         </div>
+        
+        <p><em>※ Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, 518055,  Shenzhen, China. <br>※ University of Chinese Academy of Sciences, 101400, Beijing, China.<br>※ Department of Electronic Engineering, Chinese University of Hong Kong, 999077, Hong Kong SAR, China.<br>※ Department of Gastroenterology and Hepatology, Shenzhen University General Hospital, 518055, Shenzhen, China.</em></p>
 
+<!-- Resources Section -->
+        <div class="content-section">
+            <h2 class="section-title">Resources</h2>
+            <ul>
+                <li><a href="https://arxiv.org/abs/2409.15688" target="_blank">Download Paper (PDF)</a></li>
+                <li><a href="https://github.com/Tokymin/VR-Colon-Unity" target="_blank">Code on GitHub</a></li>
+            </ul>
+        </div>
         <!-- Video Section -->
         <div class="container image-row">
             <div class="row">
@@ -89,21 +99,12 @@
             </div>
         </div>
 
-        <p><em>※ Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, 518055,  Shenzhen, China. <br>※ University of Chinese Academy of Sciences, 101400, Beijing, China.<br>※ Department of Electronic Engineering, Chinese University of Hong Kong, 999077, Hong Kong SAR, China.<br>※ Department of Gastroenterology and Hepatology, Shenzhen University General Hospital, 518055, Shenzhen, China.</em></p>
-
-        <!-- Resources Section -->
-        <div class="content-section">
-            <h2 class="section-title">Resources</h2>
-            <ul>
-                <li><a href="https://arxiv.org/abs/2409.15688" target="_blank">Download Paper (PDF)</a></li>
-                <li><a href="https://github.com/Tokymin/VR-Colon-Unity" target="_blank">Code on GitHub</a></li>
-            </ul>
-        </div>
+        
 
         <!-- Abstract Section -->
         <div class="content-section">
             <h2 class="section-title">Abstract</h2>
-            <p>With the increasing application of automated robotic digestive endoscopy (RDE), ensuring safe and efficient navigation in the unstructured and narrow digestive tract has become a critical challenge. Existing automated reinforcement learning navigation algorithms, often result in potentially risky collisions due to the absence of essential human intervention, which significantly limits the safety and effectiveness of RDE in actual clinical practice. To address this limitation, we proposed a Human Intervention (HI)-based Proximal Policy Optimization (PPO) framework, dubbed HI-PPO, which incorporates expert knowledge to enhance RDE's safety.  Specifically, we introduce an Enhanced Exploration Mechanism (EEM) to address the low exploration efficiency of the standard PPO. Additionally, a reward-penalty adjustment (RPA) is implemented to penalize unsafe actions during initial interventions. Furthermore, Behavior Cloning Similarity (BCS) is included as an auxiliary objective to ensure the agent emulates expert actions.  Comparative experiments conducted in a simulated platform across various anatomical colon segments demonstrate that our model effectively and safely guides RDE. Our code and platform is available at https://tokymin.github.io/hirde.index</p>
+            <p>With the increasing application of automated robotic digestive endoscopy (RDE), ensuring safe and efficient navigation in the unstructured and narrow digestive tract has become a critical challenge.  Existing automated reinforcement learning navigation algorithms often result in potentially risky collisions due to the absence of essential human intervention, which significantly limits the safety and effectiveness of RDE in actual clinical practice.  To address this limitation, we proposed a Human Intervention (HI)-based Proximal Policy Optimization (PPO) framework, dubbed HI-PPO, which incorporates expert knowledge to enhance RDE's safety.  Specifically, HI-PPO combines Enhanced Exploration Mechanism (EEM), Reward-Penalty Adjustment (RPA), and Behavior Cloning Similarity (BCS) to address PPO's exploration inefficiencies for safe navigation in complex gastrointestinal environments.  Comparative experiments were conducted on a simulation platform, and the results showed that HI-PPO achieved a mean ATE (Average Trajectory Error) of 8. O2mm and a Security Score of 0.862, demonstrating performance comparable to human experts.  The code will be publicly available once this paper ispublished. https://tokymin.github.io/hirde.index.</p>
         </div>
 
         <!-- Image Row Section -->
@@ -113,30 +114,12 @@
                     <img src="images/F2.jpg" class="img-fluid" alt="Second Image">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 image-container">
-                    <img src="images/F3.jpg" class="img-fluid" alt="Second Image">
-                </div>  
-            </div>
-        </div>
-
-        <div class="content-section">
-            <h2 class="section-title">Approach</h2>
-           
-            <p>To enhance safety and performance of RDE navigation, we establish a human intervention RDE agent via incorporating three novel modules into the vanilla RL architecture. To improve the safety of robotic digestive endoscopy, we propose the Human Intervention. The Reward-Penalty Adjustment (RPA) promotes safer policy learning by penalizing unsafe actions through a penalty score during initial interventions. The Behavior Cloning Similarity (BCS) improves learning performance by guiding the HI-PPO agent to imitate expert actions, integrating similarity objective into the actor-critic network for optimal policy learning. Enhanced Exploration Mechanism (EEM) integrates expert knowledge through improve state exploration efficiency, where human intervention takes over control when agent getting stuck. These mechanisms work together to enable real-time navigation actions for adapting to complex environments. The architecture of HI-PPO is shown in Figure 1, and more details will be illustrated in the following sections.</p>
-            <div class="container image-row">
-                <div class="row">
-                    <div class="col-md-6 image-container">
-                        <img src="images/F1.jpg" class="img-fluid" alt="First Image">
-                    </div>
-                </div>
-            </div>
         </div>
 
 
         <div class="content-section">
             <h2 class="section-title">Results</h2>
-            <p>The quantitative results are shown in Table I Compared to the SAC and PPO algorithms, our method consistently achieves lower ATE across varying lengths and complexities of colon segments.  Specifically, our method attained an ATE of 2.353 mm in the shortest rectal segment, significantly lower than SAC's 4.915 mm and PPO's 4.687 mm.  Furthermore, our method exhibits greater stability and minimal error fluctuations compared to other methods, as indicated by the standard deviation.  Clinically, since the average diameter of the colon is approximately 70 mm [28], a margin of 10 mm could be considered a safe distance in robot-assisted colon surgeries [29] [30].  According to the quantitative results, our method remains within the safe distance range except for the complex Sigmoid colon segment.  After incorporating the HI mechanism, our method demonstrates an average improvement of 38.63% compared to the standard PPO baseline after excluding the highest and lowest values among six segments.</p>
+            <p>This study addresses the challenges of safe and efficient navigation in automated robotic digestive endoscopy (RDE) within the unstructured and narrow confines of the digestive tract. We proposed a human intervention-based PPO framework by incorporating expert knowledge to address the safety and effectiveness of RDE. Experiments have shown that HI-PPO can safely guide RDE compared to existing RL algorithms, indicating its potential for more practical application. Future work will focus on validating the framework in real environments and exploring additional methods to further enhance its safety and practicality.</p>
             <div class="container image-row">
                 <div class="row">
                     <div class="col-md-6 image-container">
@@ -178,7 +161,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>© 2024 SIAT-MedRobot Research Team</p>
+        <p>© 2024 SIAT-MedRobot</p>
     </footer>
 
 </body>
