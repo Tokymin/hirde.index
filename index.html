@@ -5,84 +5,268 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safe Navigation for Robotic Digestive Endoscopy via Human Intervention-based Reinforcement Learning</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- 引用 CSS 样式 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #5cb85c;
+            --light-bg: #f8f9fa;
+            --text-color: #333;
+            --shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: #f5f7fa;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+            line-height: 1.4;
+        }
+        
+        h2.section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin: 30px 0 20px;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        h2.section-title i {
+            margin-right: 10px;
+            color: var(--secondary-color);
+        }
+        
+        .content-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .content-section p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+        
+        ul {
+            list-style-position: inside;
+            margin: 20px 0;
+        }
+        
+        li {
+            margin: 10px 0;
+            font-size: 1.05rem;
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            color: #3a7bc8;
+            text-decoration: underline;
+        }
+        
+        .image-row {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        
+        .image-container {
+            margin: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+        
+        .image-container:hover {
+            transform: translateY(-5px);
+        }
+        
+        img.img-fluid {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        video {
+            border-radius: 8px;
+            margin: 20px auto;
+            display: block;
+            box-shadow: var(--shadow);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .affiliation {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #555;
+        }
+        
+        .resource-item {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+        
+        .resource-item i {
+            margin-right: 10px;
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+        }
+        
+        .video-caption {
+            text-align: center;
+            margin-top: 10px;
+            color: #666;
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .header {
+                padding: 20px 10px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Header Section -->
         <div class="header">
             <h1>Safe Navigation for Robotic Digestive Endoscopy via Human Intervention-based Reinforcement Learning</h1>
             <p><em>Min Tan, Yushun Tao, Boyun Zheng, Gaosheng Xie, Lijuan Feng, Zeyang Xia, Senior Member, IEEE and Jing Xiong, Member, IEEE</em></p>   
         </div>
         
-        <p><em>※ Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, 518055,  Shenzhen, China. <br>※ University of Chinese Academy of Sciences, 101400, Beijing, China.<br>※ Department of Electronic Engineering, Chinese University of Hong Kong, 999077, Hong Kong SAR, China.<br>※ Department of Gastroenterology and Hepatology, Shenzhen University General Hospital, 518055, Shenzhen, China.</em></p>
+        <div class="affiliation">
+            <p>🏫 Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, 518055, Shenzhen, China.<br>
+            🎓 University of Chinese Academy of Sciences, 101400, Beijing, China.<br>
+            🏛️ Department of Electronic Engineering, Chinese University of Hong Kong, 999077, Hong Kong SAR, China.<br>
+            🏥 Department of Gastroenterology and Hepatology, Shenzhen University General Hospital, 518055, Shenzhen, China.</p>
+        </div>
 
-<!-- Resources Section -->
+        <!-- Resources Section -->
         <div class="content-section">
-            <h2 class="section-title">Resources</h2>
+            <h2 class="section-title"><i class="fas fa-box-open"></i> Resources</h2>
             <ul>
-                <li><a href="https://arxiv.org/abs/2409.15688" target="_blank">Download Paper (PDF)</a></li>
-                <li><a href="https://github.com/Tokymin/VR-Colon-Unity" target="_blank">Code on GitHub</a></li>
+                <li class="resource-item"><i class="fas fa-file-pdf"></i><a href="https://arxiv.org/abs/2409.15688" target="_blank">Download Paper (PDF)</a></li>
+                <li class="resource-item"><i class="fab fa-github"></i><a href="https://github.com/Tokymin/VR-Colon-Unity" target="_blank">Code on GitHub</a></li>
             </ul>
         </div>
+        
         <!-- Video Section -->
         <div class="container image-row">
             <div class="row">
                 <div class="col-md-6 image-container">
-                     <!-- 添加视频播放器 -->
                     <video width="70%" height="auto" controls>
                         <source src="images/1Rectum.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
+                    <p class="video-caption">📹 Rectum Navigation Demonstration</p>
                 </div>
             </div>
         </div>
-          <!-- Video Section -->
+        
         <div class="container image-row">
             <div class="row">
                 <div class="col-md-6 image-container">
-                     <!-- 添加视频播放器 -->
                     <video width="70%" height="auto" controls>
                         <source src="images/2Sigmoid.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
+                    <p class="video-caption">📹 Sigmoid Colon Navigation</p>
                 </div>
             </div>
         </div>
-         <!-- Video Section -->
-         <div class="container image-row">
+        
+        <div class="container image-row">
             <div class="row">
                 <div class="col-md-6 image-container">
-                     <!-- 添加视频播放器 -->
                     <video width="70%" height="auto" controls>
                         <source src="images/3Descending.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
+                    <p class="video-caption">📹 Descending Colon Navigation</p>
                 </div>
             </div>
         </div>
-         <!-- Video Section -->
-         <div class="container image-row">
+        
+        <div class="container image-row">
             <div class="row">
                 <div class="col-md-6 image-container">
-                     <!-- 添加视频播放器 -->
                     <video width="70%" height="auto" controls>
                         <source src="images/4Transverse-2.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
+                    <p class="video-caption">📹 Transverse Colon Navigation</p>
                 </div>
             </div>
         </div>
-         <!-- Video Section -->
-         <div class="container image-row">
+        
+        <div class="container image-row">
             <div class="row">
                 <div class="col-md-6 image-container">
-                     <!-- 添加视频播放器 -->
                     <video width="70%" height="auto" controls>
                         <source src="images/5Ascending.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
+                    <p class="video-caption">📹 Ascending Colon Navigation</p>
                 </div>
             </div>
         </div>
@@ -90,35 +274,40 @@
         <div class="container image-row">
             <div class="row">
                 <div class="col-md-6 image-container">
-                     <!-- 添加视频播放器 -->
                     <video width="70%" height="auto" controls>
                         <source src="images/6Cecum.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
+                    <p class="video-caption">📹 Cecum Navigation</p>
                 </div>
             </div>
         </div>
 
-        
-
         <!-- Abstract Section -->
         <div class="content-section">
-            <h2 class="section-title">Abstract</h2>
-            <p>With the increasing application of automated robotic digestive endoscopy (RDE), ensuring safe and efficient navigation in the unstructured and narrow digestive tract has become a critical challenge.  Existing automated reinforcement learning navigation algorithms often result in potentially risky collisions due to the absence of essential human intervention, which significantly limits the safety and effectiveness of RDE in actual clinical practice.  To address this limitation, we proposed a Human Intervention (HI)-based Proximal Policy Optimization (PPO) framework, dubbed HI-PPO, which incorporates expert knowledge to enhance RDE's safety.  Specifically, HI-PPO combines Enhanced Exploration Mechanism (EEM), Reward-Penalty Adjustment (RPA), and Behavior Cloning Similarity (BCS) to address PPO's exploration inefficiencies for safe navigation in complex gastrointestinal environments.  Comparative experiments were conducted on a simulation platform, and the results showed that HI-PPO achieved a mean ATE (Average Trajectory Error) of 8. O2mm and a Security Score of 0.862, demonstrating performance comparable to human experts.  The code will be publicly available once this paper ispublished. https://tokymin.github.io/hirde.index.</p>
+            <h2 class="section-title"><i class="fas fa-file-alt"></i> Abstract</h2>
+            <p>With the increasing application of automated robotic digestive endoscopy (RDE), ensuring safe and efficient navigation in the unstructured and narrow digestive tract has become a critical challenge. Existing automated reinforcement learning navigation algorithms often result in potentially risky collisions due to the absence of essential human intervention, which significantly limits the safety and effectiveness of RDE in actual clinical practice. To address this limitation, we proposed a Human Intervention (HI)-based Proximal Policy Optimization (PPO) framework, dubbed HI-PPO, which incorporates expert knowledge to enhance RDE's safety. 
+
+            Specifically, HI-PPO combines Enhanced Exploration Mechanism (EEM), Reward-Penalty Adjustment (RPA), and Behavior Cloning Similarity (BCS) to address PPO's exploration inefficiencies for safe navigation in complex gastrointestinal environments. 
+
+            Comparative experiments were conducted on a simulation platform, and the results showed that HI-PPO achieved a mean ATE (Average Trajectory Error) of 8.02mm and a Security Score of 0.862, demonstrating performance comparable to human experts. The code will be publicly available once this paper is published. <a href="https://tokymin.github.io/hirde.index">https://tokymin.github.io/hirde.index</a>.</p>
         </div>
 
         <!-- Image Row Section -->
         <div class="container image-row">
             <div class="row">
                 <div class="col-md-6 image-container">
-                    <img src="images/F10.jpg" class="img-fluid" alt="Second Image">
+                    <img src="images/F10.jpg" class="img-fluid" alt="System Architecture">
+                    <p class="video-caption">📊 System Architecture Overview</p>
                 </div>
             </div>
         </div>
+        
         <div class="container image-row">
             <div class="row">
                 <div class="col-md-6 image-container">
-                    <img src="images/F2.jpg" class="img-fluid" alt="Second Image">
+                    <img src="images/F2.jpg" class="img-fluid" alt="Methodology">
+                    <p class="video-caption">🔬 Methodology Framework</p>
                 </div>
             </div>
         </div>
@@ -126,94 +315,81 @@
         <div class="container image-row">
             <div class="row">
                 <div class="col-md-6 image-container">
-                    <img src="images/F1.jpg" class="img-fluid" alt="Second Image">
+                    <img src="images/F1.jpg" class="img-fluid" alt="Experimental Setup">
+                    <p class="video-caption">⚙️ Experimental Setup</p>
                 </div>
             </div>
         </div>
+        
         <div class="container image-row">
             <div class="row">
                 <div class="col-md-6 image-container">
-                    <img src="images/F3.jpg" class="img-fluid" alt="Second Image">
+                    <img src="images/F3.jpg" class="img-fluid" alt="Navigation Path">
+                    <p class="video-caption">🧭 Navigation Path Analysis</p>
                 </div>
             </div>
         </div>
+        
         <div class="container image-row">
             <div class="row">
                 <div class="col-md-6 image-container">
-                    <img src="images/F4.jpg" class="img-fluid" alt="Second Image">
+                    <img src="images/F4.jpg" class="img-fluid" alt="Performance Metrics">
+                    <p class="video-caption">📈 Performance Metrics Comparison</p>
                 </div>
             </div>
         </div>
+        
         <div class="container image-row">
             <div class="row">
                 <div class="col-md-6 image-container">
-                    <img src="images/F5.jpg" class="img-fluid" alt="Second Image">
+                    <img src="images/F5.jpg" class="img-fluid" alt="Safety Analysis">
+                    <p class="video-caption">🛡️ Safety Analysis Results</p>
                 </div>
             </div>
         </div>
+        
         <div class="container image-row">
             <div class="row">
                 <div class="col-md-6 image-container">
-                    <img src="images/F6.jpg" class="img-fluid" alt="Second Image">
+                    <img src="images/F6.jpg" class="img-fluid" alt="Trajectory Comparison">
+                    <p class="video-caption">📏 Trajectory Comparison</p>
                 </div>
             </div>
         </div>
+        
         <div class="container image-row">
             <div class="row">
                 <div class="col-md-6 image-container">
-                    <img src="images/F7.jpg" class="img-fluid" alt="Second Image">
+                    <img src="images/F7.jpg" class="img-fluid" alt="Error Analysis">
+                    <p class="video-caption">📉 Error Analysis Results</p>
                 </div>
             </div>
         </div>
+        
         <div class="container image-row">
             <div class="row">
                 <div class="col-md-6 image-container">
-                    <img src="images/F8.jpg" class="img-fluid" alt="Second Image">
+                    <img src="images/F8.jpg" class="img-fluid" alt="Algorithm Comparison">
+                    <p class="video-caption">🔍 Algorithm Comparison</p>
                 </div>
             </div>
         </div>
+        
         <div class="container image-row">
             <div class="row">
                 <div class="col-md-6 image-container">
-                    <img src="images/F9.jpg" class="img-fluid" alt="Second Image">
+                    <img src="images/F9.jpg" class="img-fluid" alt="Clinical Validation">
+                    <p class="video-caption">🏥 Clinical Validation Results</p>
                 </div>
             </div>
         </div>
+        
         <div class="content-section">
-            <h2 class="section-title">Results</h2>
-            <p>This study addresses the challenges of safe and efficient navigation in automated robotic digestive endoscopy (RDE) within the unstructured and narrow confines of the digestive tract. We proposed a human intervention-based PPO framework by incorporating expert knowledge to address the safety and effectiveness of RDE. Experiments have shown that HI-PPO can safely guide RDE compared to existing RL algorithms, indicating its potential for more practical application. Future work will focus on validating the framework in real environments and exploring additional methods to further enhance its safety and practicality.</p>
-            <!-- <div class="container image-row">
-                <div class="row">
-                    <div class="col-md-6 image-container">
-                        <img src="images/F4.jpg" class="img-fluid" id="custom-img" alt="F4.jpg">
-                    </div>
-                    <div class="col-md-6 image-container">
-                        <img src="images/F5.jpg" class="img-fluid" alt="Second Image">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 image-container">
-                        <img src="images/F6.jpg" class="img-fluid" alt="Second Image">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 image-container">
-                        <img src="images/F7.jpg" class="img-fluid" alt="Second Image">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 image-container">
-                        <img src="images/F8.jpg" class="img-fluid" alt="Second Image">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 image-container">
-                        <img src="images/F9.jpg" class="img-fluid" alt="Second Image">
-                    </div>
-                </div>
-            </div> -->
-       
-    </div>
+            <h2 class="section-title"><i class="fas fa-chart-line"></i> Results</h2>
+            <p>This study addresses the challenges of safe and efficient navigation in automated robotic digestive endoscopy (RDE) within the unstructured and narrow confines of the digestive tract. We proposed a human intervention-based PPO framework by incorporating expert knowledge to address the safety and effectiveness of RDE. 
+
+            Experiments have shown that HI-PPO can safely guide RDE compared to existing RL algorithms, indicating its potential for more practical application. Future work will focus on validating the framework in real environments and exploring additional methods to further enhance its safety and practicality.</p>
+        </div>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -223,7 +399,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>© 2024 SIAT-MedRobot</p>
+        <p>© 2024 SIAT-MedRobot 🤖🔬</p>
     </footer>
 
 </body>
